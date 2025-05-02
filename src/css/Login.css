@@ -1,0 +1,116 @@
+.login-wrapper {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-image: url(../assets//backgimg.svg);
+  
+  }
+  
+  .login-container {
+    width: 50%;
+    height: 30%;
+    margin: 20px auto 10px auto;
+    background-color: #F8F9FACC;
+    border-radius: 40px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .title {
+    color: #1877F2;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 400px;
+    margin: 30px auto 0 auto;
+  
+  }
+  
+  .input-group {
+    background-color: #FDFDFD;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    padding: 8px 0;
+  }
+  
+  .input-group hr {
+    border: none;
+    border-top: 1.5px solid #ccc;
+    margin: 0;
+  }
+  
+  form button {
+    padding: 12px 32px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 2px 6px #0000004D;
+    margin-top: 70px;
+  }
+  
+  .login-button {
+    padding: 12px 32px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 12.91px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 2px 6px #0000004D;
+    margin-top: 70px;
+  
+  
+  }
+  
+  
+  

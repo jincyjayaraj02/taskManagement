@@ -1,0 +1,13 @@
+/* App container */
+.app-container {
+  display: flex;
+  height: 100%; 
+  overflow: hidden;
+}
+  
+  /* Responsive layout  */
+  @media (max-width: 768px) {
+    .app-container {
+      flex-direction: column;
+    }
+  }

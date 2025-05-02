@@ -1,0 +1,132 @@
+/* Sidebar container */
+.sidebar {
+  width: 100%;
+  max-width: 380px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+
+.month-year {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.month-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.year-text {
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  color: #000000;
+}
+
+
+/* Grid for day names and dates */
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 9px;
+  text-align: center;
+}
+
+/* Day name labels */
+.days-grid span {
+  font-size: 12px;
+  color: #666;
+  word-break: break-word;
+}
+
+/* Individual date cell */
+.day {
+  padding: 6px;
+
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Highlight selected date */
+.active-day {
+  background-color: #90ee90; /* light green */
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+  }
+
+  .days-grid {
+    gap: 3px;
+  }
+
+  .day {
+    padding: 5px;
+    font-size: 11px;
+  }
+
+  .calendar h4 {
+    font-size: 14px;
+  }
+
+  .task-info {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .days-grid {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .day {
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .task-info p {
+    font-size: 13px;
+  }
+
+  .badge {
+    font-size: 10px;
+  }
+}

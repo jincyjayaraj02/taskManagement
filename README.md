@@ -1,0 +1,1 @@
+task form sycle   `cycle-button ${cycle === type ? "active" : ""}`      `day-button ${selectedDays.includes(day) ? "selected" : ""}`
